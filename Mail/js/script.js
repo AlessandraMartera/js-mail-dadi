@@ -3,14 +3,14 @@ const button = document.getElementById("check");
 // Chiedi all’utente la sua email, 
     // let email = prompt( "inserisci la tua email");
 let message = document.getElementById("message");
-let email = document.getElementById("email").value;
 
 // controlla che sia nella lista di chi può accedere,
 // check button
 button.addEventListener( "click",
     function () {
 
-        
+        let email = document.getElementById("email").value;
+
         for ( let i = 0; i < validEmail.length; i++ ) {
 
             // stampa un messaggio appropriato sull’esito del controllo.
