@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- style link -->
     <link rel="stylesheet" href="css/style.css">
     <title>Controllo Mail</title>
@@ -18,12 +22,17 @@
         <div id="message">
 
         </div>
+        <div id="controls">
+            <form action="">
+
+                <div id="text">Inserisci l'email da verificare</div>
+
+                <input type="email" id="email" placeholder="inserisci la tua email" required> 
+
+                <button id="check"> verifica </button>
+            </form>
+        </div>
         
-        <form action="">
-            <div>Inserisci l'email da verificare</div>
-            <input type="email" id="email" placeholder="inserisci la tua email" required> 
-            <button id="check"> verifica </button>
-        </form>
     </main>
     <!-- script link -->
     <script src="js/script.js"></script>
