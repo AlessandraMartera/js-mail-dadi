@@ -4,21 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <!-- style link -->
     <link rel="stylesheet" href="css/style.css">
     <title>Gioco Dadi</title>
 </head>
 <body>
     
-    <div>
-        il Numero del pc è: <span class="pc_number"></span>
-    </div>
+    <!-- header -->
+    <header>
+        <h1>IL GIOCO DEI DADI</h1>
+    </header>
 
-    <div>
-        Il Numero dell'utente é: <span class="user_number"></span>
-    </div>
+    <main>
+        <button id="play"> GIOCA </button>
 
-    <div> The Winner is <span class="winner"></span> </div>
+        <section class="first_message_section active">
+            Ciao inserisci qui il tuo nome e scopri se vincerai contro il tuo Pc
+            <input type="text" class="user_name">
+        </section>
+        <section class="play_section">
+
+            <div id="game">
+            <!-- Pc random number -->
+            <div>
+                Il Numero del pc è: <span class="pc_number"></span>
+            </div>
+        
+            <!-- User random number -->
+            <div>
+                Il Numero di <span class="name"></span> é: <span class="user_number"></span>
+            </div>
+        
+            </div>
+        
+            <!-- winner message -->
+            <div id="message">
+                <div> The Winner is <span class="winner"></span>!!! </div>
+            </div>
+
+        </section>
+        
+        
+    
+    </main>
+    
+    
     <!-- script link -->
     <script src="js/script.js"></script>
 </body>
