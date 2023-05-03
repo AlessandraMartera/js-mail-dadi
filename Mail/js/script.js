@@ -1,20 +1,28 @@
 const validEmail = ["prova", "prova@live.it", "alessandra@gmail.com", "gino@gmail.com", "simone@outlook.it", "marika@libero.it"];
+const button = document.getElementById("check");
+// Chiedi all’utente la sua email, 
+    // let email = prompt( "inserisci la tua email");
+let message = document.getElementById("message");
+let email = document.getElementById("email").value;
 
-//Chiedi all’utente la sua email, 
-    let email = prompt( "inserisci la tua email");
+// controlla che sia nella lista di chi può accedere,
+// check button
+button.addEventListener( "click",
+    function () {
 
+        
+        for ( let i = 0; i < validEmail.length; i++ ) {
 
+            // stampa un messaggio appropriato sull’esito del controllo.
+            if ( email === validEmail[i]) {
+                message.innerHTML = "Email Valida";
+                i = validEmail.length;
+            } else {
+                message.innerHTML = "Email NON Valida";
+            }
+        }
 
-//controlla che sia nella lista di chi può accedere,
-
-for ( let i = 0; i < validEmail.length; i++ ) {
-
-//stampa un messaggio appropriato sull’esito del controllo.
-    if ( email === validEmail[i]) {
-        console.log( "email valida" );
-        i = validEmail.length;
-    } else {
-        console.log("email non valida");
+        document.getElementById("email").value = "";
     }
-}
+)
 
